@@ -1,0 +1,101 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: black;
+  background-color: #4f81d1;
+}
+
+img {
+  width: 150x;
+  height: 100px;
+    border-radius: 0.75rem;
+    border: 0.5px solid;
+    color: #b7a1a1;
+  
+}
+
+ 
+.Input_container {
+  width: 370px;
+  justify-content: space-between;
+
+}
+
+.Input {
+  border-radius: 11px;
+ 
+  font-weight: 200;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.heading {
+  width: 250px;
+  width: 274px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: medium;
+  font-weight: 200;
+}
+.add_btn{
+  margin-left: 5px;
+
+}
+
+.check-btn {
+  margin-left: 5px;
+}
+.check-btn:hover::before{
+  content: attr();
+}
+
+.check-btn::after{
+ 
+  display: none;
+}
+.check-btn:hover::after{
+  display: inline;
+  content: "Remove all";
+}
+
+.Item_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.Each-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 379px) {
+  .Input_container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+  }
+  .add_btn{
+    margin: 5px;
+  }
+  .Item_container{
+    align-items: center;
+    margin: 10px 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  
+}
